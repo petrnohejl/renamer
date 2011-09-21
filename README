@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------
+
+Renamer
+(c) 2008 Petr Nohejl
+
+Renamer je jednoduchý nástroj pro dávkové přejmenování souborů a adresářů.
+Umožňuje vkládání, nahrazení a mazání znaků v názvu souboru či adresáře.
+Podporuje regulární výrazy, filtrování souborů, změnu velikosti písmen, práci s
+koncovkami a zobrazuje náhled cílového názvu.
+
+--------------------------------------------------------------------------------
+
+Instalace:
+
+Renamer je aplikace využívající grafické uživatelské rozhraní TKinter a je
+napsána v jazyce Python 2.6. Pro její spuštění je třeba mít nainstalován
+interpret jazyka Python, který lze stáhnout na adrese: www.python.org. Knihovna
+TKinter je součástí instalačního balíčku Python.
+
+--------------------------------------------------------------------------------
+
+Ovládání: 
+
+CHOOSE THE WORK DIRECTORY:
+Press Open button and choose dir or set the path in the text array.
+
+SELECT THE TYPE OF OBJECTS:
+select the type of objects, which you want to rename, you can choose files,
+directories or both.
+
+USE THE FILTER:
+You can use the filter, which uses Unix style pattern expansion, for show only
+some files or dirs from work dir, set the filter and press enter or Refresh
+button, you should see the list of objects, which you chose, it shows current
+name, new name, type, size, examples: * show all; *.jpg show files with
+extension .jpg; *.?? show files with 2-chars extension; [a-cz]* show files with
+first letter a,b,c,z.
+
+USE THE INSERT FUNCTION:
+This function insert a string into the filename, check the Insert checkbox and
+enter the string, set the position, where the string will be placed, check the
+Reverse checkbox to count the position reversly, check the Extension checkbox if
+you want to work also with the file extension.
+
+USE THE REPLACE FUNCTION:
+This function replace some string with another string, check the Replace
+checkbox and enter the strings, check the Count checkbox and enter the count
+number (integer) if you want to replace the string only n-times, check the
+Interval checkbox and enter the interval numbers (integers) if you want to
+replace the string only on specific interval, you can also use negative indexes
+in the interval, first index must be smaller and both indexes must be only
+positive or only negative, examples: 0 1 means first letter; 3 8 means
+4. - 8. letters, -1 0 means last letter, -3 0 means last three letters, check
+the Regular expression checkbox if you want to work with regular expression
+(uses in first text array), check the Extension checkbox if you want to work
+also with the file extension.
+
+USE THE CASE SENSITIVITY FUNCTION:
+This function convert string to lower or upper case letters or swap the case
+letters, check the Case sensitivity checkbox and choose one of the options,
+check the Interval checkbox and enter the interval numbers (integers) if you
+want to convert the string only on specific interval, you can also use negative
+indexes in the interval, first index must be smaller and both indexes must be
+only positive or only negative, check the Extension checkbox if you want to work
+also with the file extension.
+
+PREVIEW & RENAME:
+Before renaming, you must press Preview button to refresh the new filenames,
+press Preview button, select the objects from the list, which you want to
+rename, press the Rename button and your files or dirs will be renamed, press
+Select all button if you want to select all objects in the list, press Deselect
+all button if you want to deselect all objects in the list, press Clear button
+if you want to clear all text arrays in Insert, Replace and Case sensitivity
+functions.
+
+--------------------------------------------------------------------------------
